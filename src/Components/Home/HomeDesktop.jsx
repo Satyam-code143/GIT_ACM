@@ -4,6 +4,7 @@ import { useStyles } from "../../Styles/DesktopStyles";
 import CustomCarousel from "../CustomCarousel/CustomCarousel";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import GIT_IMAGE from "../../Resources/Images/GIT_IMAGE.jpg";
 
 function HomeDesktop() {
   const classes = useStyles();
@@ -46,7 +47,46 @@ function HomeDesktop() {
             />
           </Paper>
         </div>
-        <div className={classes.container2}></div>
+        <div className={classes.container2}>
+          <div className={classes.content1}>
+            <Typography
+              variant="h2"
+              color="initial"
+              className={classes.contentSub}
+              data-aos="fade-up"
+            >
+              about
+            </Typography>
+            <Typography
+              variant="h2"
+              color="initial"
+              className={classes.contentMain}
+              data-aos="fade-up"
+            >
+              ACM GIT
+            </Typography>
+            <Typography
+              variant="body1"
+              color="initial"
+              className={classes.contentTypo}
+              data-aos="fade-up"
+            >
+              Consequat ex voluptate qui commodo eiusmod et labore sit. Velit et
+              culpa ut dolore veniam quis sint consequat laborum quis commodo
+              nostrud est. Ipsum incididunt exercitation est minim pariatur ad
+              duis labore ut. Amet aute tempor cillum est est id sunt voluptate
+              laboris exercitation. Excepteur laborum incididunt reprehenderit
+              officia do. Non excepteur laboris eiusmod culpa sunt ipsum mollit
+              irure labore in officia commodo do.
+            </Typography>
+          </div>
+          <Paper
+            className={classes.imgwithContentPaper}
+            //  data-aos="fade-right"
+          >
+            <img src={GIT_IMAGE} className={classes.imgwithContent} alt="GIT" />
+          </Paper>
+        </div>
       </div>
     </>
   );

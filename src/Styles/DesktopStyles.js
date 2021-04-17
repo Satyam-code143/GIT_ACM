@@ -53,12 +53,41 @@ export const useStyles = makeStyles({
     width: "100%",
     height: 484,
   },
-
   container2: {
     width: "100%",
     display: "flex",
     flexDirection: "row",
-    marginRight: 20,
-    justifyContent: "space-between",
+    justifyContent: "space-around",
+    marginTop: "10%",
+    alignItems: "center",
+  },
+  imgwithContentPaper: {
+    width: "30%",
+    // height: 400,
+    borderRadius: 40,
+    alignSelf: "flex-end",
+  },
+  imgwithContent: {
+    width: "100%",
+    // height: 420,
+    borderRadius: 40,
+  },
+  content1: {
+    width: "60%",
+  },
+  contentSub: {
+    fontFamily: "Futura Extra",
+    color: "#F79852",
+    fontSize: 50,
+  },
+  contentMain: {
+    fontFamily: "Futura Extra",
+    color: "#1D266C",
+    fontSize: 70,
+  },
+  contentTypo: {
+    fontFamily: "Arya",
+    fontSize: 25,
+    // overflow: "",
   },
 });
