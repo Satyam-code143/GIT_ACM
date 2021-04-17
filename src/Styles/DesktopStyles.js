@@ -53,4 +53,12 @@ export const useStyles = makeStyles({
     width: "100%",
     height: 484,
   },
+
+  container2: {
+    width: "100%",
+    display: "flex",
+    flexDirection: "row",
+    marginRight: 20,
+    justifyContent: "space-between",
+  },
 });

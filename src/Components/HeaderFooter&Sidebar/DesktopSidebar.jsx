@@ -5,6 +5,8 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import { useTrail, a } from "react-spring";
+import Aos from "aos";
+import "aos/dist/aos.css";
 // import { Link } from "react-router-dom";
 
 const SocialApp = [
@@ -29,6 +31,10 @@ function DesktopSidebar(props) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
+    Aos.init({});
+  }, []);
+
+  useEffect(() => {
     setOpen(true);
     return () => {
       setOpen(false);
@@ -45,7 +51,7 @@ function DesktopSidebar(props) {
   const classes = useStyles();
   return (
     <>
-      <div className={classes.sideSocialBar}>
+      <div className={classes.sideSocialBar} data-aos="fade-right">
         <div className={classes.container1}>
           <div className={classes.emptyContainer}></div>
           <div className={classes.socialIconContainer}>

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "@material-ui/core";
 import { useStyles } from "../../Styles/DesktopHeaderFooter&Sidebar";
 import images from "../../Resources/Images/ACM_LOGO.png";
 // import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const ButtonNames = [
   {
@@ -48,8 +50,12 @@ function DesktopHeader() {
     config: { mass: 5, tension: 350, friction: 20 },
   }));
 
+  useEffect(() => {
+    Aos.init({});
+  }, []);
+
   return (
-    <nav className={classes.appbar}>
+    <nav className={classes.appbar} data-aos="fade-up">
       <animated.div
         className={classes.logoContainer}
         onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
