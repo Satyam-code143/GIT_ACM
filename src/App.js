@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router basename="/ACM-GIT">
+    <Router basename="/GIT_ACM/">
       <Route path="/" exact component={Home} />
     </Router>
   );
