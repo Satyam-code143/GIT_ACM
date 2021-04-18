@@ -3,16 +3,40 @@ import { makeStyles } from "@material-ui/core/styles";
 const width = window.screen.width;
 const height = window.screen.height;
 
+const flexRow = {
+  width: "100%",
+  display: "flex",
+  flexDirection: "row",
+};
+
+const flexColumn = {
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+};
+
+const subHeading = {
+  fontFamily: "Futura Extra",
+  fontSize: 50,
+};
+
+const mainHeading = {
+  fontFamily: "Futura Extra",
+  color: "#1D266C",
+  textTransform: "uppercase",
+};
+
+const imgProp = {
+  width: "100%",
+  height: "100%",
+};
+
 export const useStyles = makeStyles({
   rootContainer: {
-    width: "100%",
-    display: "flex",
-    flexDirection: "column",
+    ...flexColumn,
   },
   container1: {
-    width: "100%",
-    display: "flex",
-    flexDirection: "row",
+    ...flexRow,
     marginRight: 20,
     justifyContent: "space-between",
   },
@@ -24,18 +48,16 @@ export const useStyles = makeStyles({
     zIndex: 2,
     top: "calc(45%)",
     left: "15%",
-    fontFamily: "Futura Extra",
-    color: "#1D266C",
     fontSize: 100,
+    ...mainHeading,
   },
   subTitle: {
     position: "absolute",
     zIndex: 2,
     top: "calc(60%)",
     left: "15%",
-    fontFamily: "Futura Extra",
     color: "#F79852",
-    fontSize: 50,
+    ...subHeading,
   },
   imgPaper: {
     width: "70%",
@@ -44,9 +66,7 @@ export const useStyles = makeStyles({
     marginRight: 40,
   },
   imageProp: {
-    width: "100%",
-    height: "100%",
-    backgroundRepeat: "no-repeat",
+    ...imgProp,
     borderRadius: 62,
   },
   imgDiv: {
@@ -54,40 +74,69 @@ export const useStyles = makeStyles({
     height: 484,
   },
   container2: {
-    width: "100%",
-    display: "flex",
-    flexDirection: "row",
+    ...flexRow,
     justifyContent: "space-around",
     marginTop: "10%",
     alignItems: "center",
   },
   imgwithContentPaper: {
     width: "30%",
-    // height: 400,
+    height: 300,
     borderRadius: 40,
     alignSelf: "flex-end",
   },
   imgwithContent: {
     width: "100%",
-    // height: 420,
+    height: 300,
     borderRadius: 40,
   },
   content1: {
     width: "60%",
   },
   contentSub: {
-    fontFamily: "Futura Extra",
+    ...subHeading,
     color: "#F79852",
-    fontSize: 50,
-  },
-  contentMain: {
-    fontFamily: "Futura Extra",
-    color: "#1D266C",
-    fontSize: 70,
   },
   contentTypo: {
     fontFamily: "Arya",
     fontSize: 25,
-    // overflow: "",
+  },
+  container3: {
+    ...flexRow,
+    marginTop: "10%",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  notificationPaper: {
+    width: "100%",
+    height: 350,
+    borderRadius: 28,
+  },
+  content2: {
+    width: "60%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  contentSubNotification: {
+    ...subHeading,
+    color: "rgba(15, 233, 11, 0.48)",
+    alignSelf: "flex-start",
+    marginLeft: 10,
+  },
+  contentMainNotification: {
+    ...mainHeading,
+    fontSize: 50,
+    padding: 10,
+  },
+  imagePropNotification: {
+    ...imgProp,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  },
+  imgDivNotification: {
+    width: "100%",
+    height: 220,
   },
 });
