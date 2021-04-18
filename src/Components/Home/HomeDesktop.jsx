@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Paper, Typography } from "@material-ui/core";
 import { useStyles } from "../../Styles/DesktopStyles";
 import CustomCarousel from "../CustomCarousel/CustomCarousel";
@@ -7,12 +7,22 @@ import "aos/dist/aos.css";
 import GIT_IMAGE from "../../Resources/Images/GIT_IMAGE.jpg";
 import CustomNotification from "../CustomCarousel/CustomNotification";
 import Custom3dCarousel from "../CustomCarousel/Custom3dCarousel";
+import api from "../../Api/api";
 
 function HomeDesktop() {
   const classes = useStyles();
-  useEffect(() => {
+  const [imageData, setimageData] = useState(null);
+  useEffect(async () => {
     Aos.init({ duration: 1000 });
+
+    const response = await api.get("/api/home/notification");
+
+    setimageData(response.data[0].description);
   }, []);
+
+  useEffect(() => {
+    console.log(imageData);
+  }, [imageData]);
   return (
     <>
       <div className={classes.rootContainer}>
@@ -83,7 +93,11 @@ function HomeDesktop() {
             </Typography>
           </div>
           <Paper className={classes.imgwithContentPaper} data-aos="fade-right">
-            <img src={GIT_IMAGE} className={classes.imgwithContent} alt="GIT" />
+            <img
+              ng-src={GIT_IMAGE}
+              className={classes.imgwithContent}
+              alt="GIT"
+            />
           </Paper>
         </div>
         <div className={classes.container2}>
