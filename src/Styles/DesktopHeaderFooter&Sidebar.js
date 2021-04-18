@@ -51,4 +51,24 @@ export const useStyles = makeStyles((theme) => ({
     flexDirection: "row",
     justifyContent: "space-between",
   },
+  //Footer
+  mainFooterContainer: {
+    width: "100%",
+    height: 400,
+    backgroundColor: "#192160",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    paddingTop: 40,
+  },
+  footerContainer1: {
+    width: "40%",
+    display: "flex",
+    flexDirection: "column",
+  },
+  footerContainer2: {
+    width: "40%",
+    display: "flex",
+    flexDirection: "column",
+  },
 }));

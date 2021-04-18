@@ -119,6 +119,11 @@ export const useStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
   },
+  contentMain: {
+    ...mainHeading,
+    fontSize: 70,
+  },
+
   contentSubNotification: {
     ...subHeading,
     color: "rgba(15, 233, 11, 1)",
