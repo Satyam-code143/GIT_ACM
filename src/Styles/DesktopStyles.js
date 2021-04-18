@@ -121,7 +121,7 @@ export const useStyles = makeStyles({
   },
   contentSubNotification: {
     ...subHeading,
-    color: "rgba(15, 233, 11, 0.48)",
+    color: "rgba(15, 233, 11, 1)",
     alignSelf: "flex-start",
     marginLeft: 10,
   },
@@ -138,5 +138,27 @@ export const useStyles = makeStyles({
   imgDivNotification: {
     width: "100%",
     height: 220,
+  },
+  container4: {
+    ...flexRow,
+    marginTop: "10%",
+  },
+  content3: {
+    ...flexColumn,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  contentSubEvent: {
+    ...subHeading,
+    color: " rgba(15, 233, 11, 1)",
+    fontSize: 45,
+  },
+  contentMainEvent: {
+    ...mainHeading,
+    fontSize: 60,
+  },
+  eventCarousel: {
+    width: "60%",
+    height: 500,
   },
 });

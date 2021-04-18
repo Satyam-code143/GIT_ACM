@@ -6,6 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import GIT_IMAGE from "../../Resources/Images/GIT_IMAGE.jpg";
 import CustomNotification from "../CustomCarousel/CustomNotification";
+import Custom3dCarousel from "../CustomCarousel/Custom3dCarousel";
 
 function HomeDesktop() {
   const classes = useStyles();
@@ -134,6 +135,30 @@ function HomeDesktop() {
                 imgDivStyle={classes.imgDivNotification}
               />
             </Paper>
+          </div>
+        </div>
+        <div className={classes.container4}>
+          <div className={classes.content3}>
+            <Typography
+              variant="h2"
+              color="initial"
+              className={classes.contentSubEvent}
+              data-aos="fade-up"
+            >
+              upcoming
+            </Typography>
+
+            <Typography
+              variant="h2"
+              color="initial"
+              className={classes.contentMainEvent}
+              data-aos="fade-up"
+            >
+              Events
+            </Typography>
+            <div className={classes.eventCarousel} data-aos="fade-up">
+              <Custom3dCarousel />
+            </div>
           </div>
         </div>
       </div>
