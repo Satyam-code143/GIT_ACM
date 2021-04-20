@@ -1,13 +1,13 @@
 import React from "react";
-import HomeDesktop from "./HomeDesktop";
+import TeamDesktop from "./TeamDesktop";
 import DesktopCommonComponent from "../CommonDesktopComponent/DesktopCommonComponent";
 
-function Home() {
+function Team() {
   return (
     // <DesktopCommonComponent>
-    <HomeDesktop />
+    <TeamDesktop />
     // </DesktopCommonComponent>
   );
 }
 
-export default Home;
+export default Team;

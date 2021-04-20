@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Button } from "@material-ui/core";
 import { useStyles } from "../../Styles/DesktopHeaderFooter&Sidebar";
 import images from "../../Resources/Images/ACM_LOGO.png";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -11,12 +11,12 @@ const ButtonNames = [
   {
     id: 0,
     name: "Home",
-    to: "",
+    to: "/",
   },
   {
     id: 1,
     name: "Our Team",
-    to: "",
+    to: "/OurTeam",
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ function DesktopHeader() {
             key={id}
             type="text"
             // component={Link}
-            component={animated.button}
+            component={(animated.button, Link)}
             to={to}
             className={classes.navButton}
             style={{

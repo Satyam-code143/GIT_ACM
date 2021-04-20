@@ -11,18 +11,19 @@ import api from "../../Api/api";
 
 function HomeDesktop() {
   const classes = useStyles();
-  const [imageData, setimageData] = useState(null);
-  useEffect(async () => {
-    Aos.init({ duration: 1000 });
-
-    const response = await api.get("/api/home/notification");
-
-    setimageData(response.data[0].description);
-  }, []);
+  const [baseImage, setBaseImage] = useState("");
 
   useEffect(() => {
-    console.log(imageData);
-  }, [imageData]);
+    Aos.init({ duration: 1000 });
+    async function getData() {
+      const response = await api.get("api/home/notification");
+      const image = response.data[0].img.data;
+      const img = new Buffer.from(image).toString("base64");
+      setBaseImage(img);
+    }
+    getData();
+  }, []);
+
   return (
     <>
       <div className={classes.rootContainer}>
@@ -94,7 +95,7 @@ function HomeDesktop() {
           </div>
           <Paper className={classes.imgwithContentPaper} data-aos="fade-right">
             <img
-              ng-src={GIT_IMAGE}
+              src={`data:image/png;base64,${baseImage}`}
               className={classes.imgwithContent}
               alt="GIT"
             />

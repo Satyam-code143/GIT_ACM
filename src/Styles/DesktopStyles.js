@@ -32,6 +32,8 @@ const imgProp = {
 };
 
 export const useStyles = makeStyles({
+  //Home
+
   rootContainer: {
     ...flexColumn,
   },
@@ -165,5 +167,62 @@ export const useStyles = makeStyles({
   eventCarousel: {
     width: "60%",
     height: 500,
+  },
+
+  // OurTeam
+  teamTitle: {
+    textAlign: "center",
+    width: "100%",
+    padding: 10,
+    fontWeight: "600",
+  },
+  firstContainer: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 50,
+  },
+  teamPaper: {
+    width: 390,
+    height: 220,
+    borderRadius: 25,
+    marginBottom: 50,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    margin: 40,
+    background:
+      "linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(12,6,88,1) 21%, rgba(7,7,100,1) 39%, rgba(8,8,112,1) 70%, rgba(239,239,246,1) 100%)",
+  },
+  teamProfileImage: {
+    width: 322,
+    height: 177,
+    borderRadius: 25,
+  },
+  teamContent: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    position: "absolute",
+  },
+  nameStyle: {
+    fontSize: 24,
+    fontWeight: "700",
+  },
+  descriptionStyle: {
+    fontWeight: "700",
+  },
+  secondContainer: {
+    width: "100%",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: 50,
+    padding: 20,
+    flexWrap: "wrap",
   },
 });
