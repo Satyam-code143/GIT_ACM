@@ -170,11 +170,17 @@ export const useStyles = makeStyles({
   },
 
   // OurTeam
-  teamTitle: {
+  teamSub: {
+    ...subHeading,
     textAlign: "center",
     width: "100%",
-    padding: 10,
-    fontWeight: "600",
+    color: "#F79852",
+    fontSize: 70,
+  },
+  teamMain: {
+    ...mainHeading,
+    textAlign: "center",
+    width: "100%",
   },
   firstContainer: {
     width: "100%",
@@ -194,7 +200,7 @@ export const useStyles = makeStyles({
     alignItems: "center",
     margin: 40,
     background:
-      "linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(12,6,88,1) 21%, rgba(7,7,100,1) 39%, rgba(8,8,112,1) 70%, rgba(239,239,246,1) 100%)",
+      "linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(12,6,88,1) 21%, rgba(7,7,100,1) 39%, rgba(8,8,112,1) 70%, rgba(239,239,246,1) 100%)",
   },
   teamProfileImage: {
     width: 322,
@@ -211,9 +217,11 @@ export const useStyles = makeStyles({
   nameStyle: {
     fontSize: 24,
     fontWeight: "700",
+    color: "#FFFF",
   },
   descriptionStyle: {
     fontWeight: "700",
+    color: "#FFFF",
   },
   secondContainer: {
     width: "100%",
@@ -222,7 +230,7 @@ export const useStyles = makeStyles({
     justifyContent: "space-between",
     alignItems: "center",
     marginTop: 50,
-    padding: 20,
+    padding: 60,
     flexWrap: "wrap",
   },
 });

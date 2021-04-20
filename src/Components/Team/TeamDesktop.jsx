@@ -57,8 +57,21 @@ function HomeDesktop() {
   return (
     <>
       <Grid container style={{ width: "100%" }}>
-        <Typography variant="h4" color="initial" className={classes.teamTitle}>
-          Meet My Team
+        <Typography
+          variant="h2"
+          color="initial"
+          className={classes.teamSub}
+          data-aos="fade-up"
+        >
+          our
+        </Typography>
+        <Typography
+          variant="h2"
+          color="initial"
+          className={classes.teamMain}
+          data-aos="fade-up"
+        >
+          Team
         </Typography>
         <motion.div className={classes.firstContainer}>
           {TeamList.filter((item) => item.id === 0).map(
