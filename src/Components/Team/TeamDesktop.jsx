@@ -81,6 +81,7 @@ function HomeDesktop() {
                 className={classes.teamPaper}
                 component={motion.div}
                 key={id}
+                data-aos="fade-up"
               >
                 <motion.img
                   src={Image}
@@ -132,6 +133,7 @@ function HomeDesktop() {
               className={classes.teamPaper}
               component={motion.div}
               key={id}
+              data-aos="fade-up"
             >
               <motion.img
                 src={Image}

@@ -95,7 +95,8 @@ function HomeDesktop() {
           </div>
           <Paper className={classes.imgwithContentPaper} data-aos="fade-right">
             <img
-              src={`data:image/png;base64,${baseImage}`}
+              // src={`data:image/png;base64,${baseImage}`}
+              src={GIT_IMAGE}
               className={classes.imgwithContent}
               alt="GIT"
             />
