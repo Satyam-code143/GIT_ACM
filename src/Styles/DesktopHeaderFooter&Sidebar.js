@@ -30,7 +30,7 @@ export const useStyles = makeStyles((theme) => ({
     height: 202,
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     alignItems: "center",
   },
   //Header
@@ -54,12 +54,13 @@ export const useStyles = makeStyles((theme) => ({
   //Footer
   mainFooterContainer: {
     width: "100%",
-    height: 400,
+    height: "10vh",
     backgroundColor: "#192160",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
-    paddingTop: 40,
+    // paddingTop: 40,
+    marginTop: "4rem",
   },
   footerContainer1: {
     width: "40%",

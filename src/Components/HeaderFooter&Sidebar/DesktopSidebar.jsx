@@ -7,23 +7,19 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import { useTrail, a } from "react-spring";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 const SocialApp = [
   {
     id: 0,
     component: <InstagramIcon />,
-    link: "",
+    link: "https://instagram.com/acm_klsgit?utm_medium=copy_link",
   },
   {
     id: 1,
-    component: <FacebookIcon />,
-    link: "",
-  },
-  {
-    id: 2,
     component: <LinkedInIcon />,
-    link: "",
+    link: "https://www.linkedin.com/in/acm-student-chapter-klsgit-8bb3bb1ba",
   },
 ];
 
@@ -59,7 +55,7 @@ function DesktopSidebar(props) {
               <IconButton
                 key={SocialApp[index].id}
                 aria-label="ACM_GIT Instagram"
-                component={a.button}
+                component={a.a}
                 style={{
                   ...rest,
                   transform: x.to((x) => `translate3d(0,${x}px,0)`),
@@ -70,6 +66,8 @@ function DesktopSidebar(props) {
                   color: "#FFFF",
                   fontSize: 56,
                 }}
+                href={SocialApp[index].link}
+                target="_blank"
               >
                 {SocialApp[index].component}
               </IconButton>

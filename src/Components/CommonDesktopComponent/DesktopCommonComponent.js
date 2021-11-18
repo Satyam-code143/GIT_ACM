@@ -2,7 +2,6 @@ import React from "react";
 import { makeStyles } from "@material-ui/core";
 import DesktopSidebar from "../HeaderFooter&Sidebar/DesktopSidebar";
 import DesktopHeader from "../HeaderFooter&Sidebar/DesktopHeader";
-import FooterDesktop from "../HeaderFooter&Sidebar/FooterDesktop";
 
 const useStyles = makeStyles({
   rootContainer: {
@@ -29,7 +28,6 @@ function DesktopCommonComponent(props) {
           {props.children}
         </div>
       </div>
-      <FooterDesktop />
     </>
   );
 }

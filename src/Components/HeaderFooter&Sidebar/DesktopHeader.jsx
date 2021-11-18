@@ -21,17 +21,12 @@ const ButtonNames = [
   {
     id: 2,
     name: "Events",
-    to: "",
+    to: "/Events",
   },
   {
     id: 3,
     name: "Gallery",
-    to: "",
-  },
-  {
-    id: 4,
-    name: "Blogs",
-    to: "",
+    to: "/Gallery",
   },
 ];
 
@@ -69,7 +64,7 @@ function DesktopHeader() {
           <Button
             key={id}
             type="text"
-            // component={Link}
+            disableTouchRipple={true}
             component={(animated.button, Link)}
             to={to}
             className={classes.navButton}

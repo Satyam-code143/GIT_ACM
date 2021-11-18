@@ -8,6 +8,7 @@ import {
   CardContent,
   Button,
   Typography,
+  Box,
 } from "@material-ui/core";
 import Carousel from "react-spring-3d-carousel";
 import Image1 from "../../Resources/Images/Image1.jpg";
@@ -35,7 +36,7 @@ function Custom3dCarousel() {
     {
       key: 0,
       content: (
-        <Card className={classes.root}>
+        <Box component={Card} boxShadow={12} className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -63,13 +64,13 @@ function Custom3dCarousel() {
               Learn More
             </Button>
           </CardActions>
-        </Card>
+        </Box>
       ),
     },
     {
       key: 1,
       content: (
-        <Card className={classes.root}>
+        <Box component={Card} boxShadow={12} className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -97,13 +98,13 @@ function Custom3dCarousel() {
               Learn More
             </Button>
           </CardActions>
-        </Card>
+        </Box>
       ),
     },
     {
       key: 2,
       content: (
-        <Card className={classes.root}>
+        <Box component={Card} boxShadow={12} className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -131,13 +132,13 @@ function Custom3dCarousel() {
               Learn More
             </Button>
           </CardActions>
-        </Card>
+        </Box>
       ),
     },
     {
       key: 3,
       content: (
-        <Card className={classes.root}>
+        <Box component={Card} boxShadow={12} className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -165,7 +166,7 @@ function Custom3dCarousel() {
               Learn More
             </Button>
           </CardActions>
-        </Card>
+        </Box>
       ),
     },
   ].map((slide, index) => {
