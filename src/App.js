@@ -8,7 +8,7 @@ import Gallery from "./Components/Gallery/Gallery";
 
 function App() {
   return (
-    <Router basename="/GIT_ACM/">
+    <Router>
       <DesktopCommonComponent>
         <Route path="/" exact component={Home} />
         <Route path="/OurTeam" component={Team} />
