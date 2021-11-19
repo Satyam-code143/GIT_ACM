@@ -3,12 +3,9 @@ import { useStyles } from "../../Styles/DesktopHeaderFooter&Sidebar";
 import { Divider, IconButton } from "@material-ui/core";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import FacebookIcon from "@material-ui/icons/Facebook";
 import { useTrail, a } from "react-spring";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
 
 const SocialApp = [
   {

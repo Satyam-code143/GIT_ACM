@@ -1,31 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Paper, Typography } from "@material-ui/core";
 import { useStyles } from "../../Styles/DesktopStyles";
 import CustomCarousel from "../CustomCarousel/CustomCarousel";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import GIT_IMAGE from "../../Resources/Images/GIT_IMAGE.jpg";
-import CustomNotification from "../CustomCarousel/CustomNotification";
-import Custom3dCarousel from "../CustomCarousel/Custom3dCarousel";
 import MainAcm from "../../Resources/Images/Main.png";
 import LocalACM from "../../Resources/Images/LocalACM.JPG";
 import Principal from "../../Resources/Images/Principal.jpg";
 import HOD from "../../Resources/Images/HOD.jpg";
-import api from "../../Api/api";
 
 function HomeDesktop() {
   const classes = useStyles();
-  const [baseImage, setBaseImage] = useState("");
 
   useEffect(() => {
     Aos.init({ duration: 1000 });
-    async function getData() {
-      const response = await api.get("api/home/notification");
-      const image = response.data[0].img.data;
-      const img = new Buffer.from(image).toString("base64");
-      setBaseImage(img);
-    }
-    getData();
   }, []);
 
   return (

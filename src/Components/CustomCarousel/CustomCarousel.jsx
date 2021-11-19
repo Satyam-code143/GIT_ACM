@@ -7,7 +7,7 @@ import Image1 from "../../Resources/Images/Image1.jpg";
 import Image2 from "../../Resources/Images/Image2.jpg";
 import Image3 from "../../Resources/Images/Image3.jpg";
 import Image4 from "../../Resources/Images/Image4.jpg";
-import { IconButton, makeStyles } from "@material-ui/core";
+import { IconButton } from "@material-ui/core";
 
 const useStyles = {
   position: "absolute",

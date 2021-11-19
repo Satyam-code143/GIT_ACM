@@ -1,8 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-const width = window.screen.width;
-const height = window.screen.height;
-
 const flexRow = {
   width: "100%",
   display: "flex",

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import { Paper } from "@material-ui/core";
-import Image from "../../Resources/Images/Image1.jpg";
 import AD from "../../Resources/Images/AD.jpg";
 import SP from "../../Resources/Images/SP.jpg";
 import VR from "../../Resources/Images/VR.jpg";
