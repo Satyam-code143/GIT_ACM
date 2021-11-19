@@ -33,6 +33,7 @@ export const useStyles = makeStyles({
 
   rootContainer: {
     ...flexColumn,
+    marginTop: 100,
   },
   container1: {
     ...flexRow,

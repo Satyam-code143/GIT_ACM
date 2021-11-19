@@ -44,7 +44,11 @@ function DesktopSidebar(props) {
   const classes = useStyles();
   return (
     <>
-      <div className={classes.sideSocialBar} data-aos="fade-right">
+      <div
+        className={classes.sideSocialBar}
+        data-aos="fade-right"
+        style={{ position: "fixed" }}
+      >
         <div className={classes.container1}>
           <div className={classes.emptyContainer}></div>
           <div className={classes.socialIconContainer}>

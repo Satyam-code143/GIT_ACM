@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
+import { Divider, makeStyles, Typography } from "@material-ui/core";
 import DesktopSidebar from "../HeaderFooter&Sidebar/DesktopSidebar";
 import DesktopHeader from "../HeaderFooter&Sidebar/DesktopHeader";
 
@@ -11,9 +11,9 @@ const useStyles = makeStyles({
   },
   subContainer: {
     width: "100%",
+    marginLeft: 90,
     display: "flex",
     flexDirection: "column",
-    marginBottom: "10%",
   },
 });
 
@@ -26,6 +26,25 @@ function DesktopCommonComponent(props) {
         <div className={classes.subContainer}>
           <DesktopHeader />
           {props.children}
+          <footer
+            style={{
+              width: "100%",
+              height: "10vh",
+              backgroundColor: "rgba(29, 38, 108, 1)",
+              marginTop: "2rem",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Divider
+              style={{ background: "#fff", marginTop: "3rem", width: "100%" }}
+            />
+            <Typography variant="subtitle1" style={{ color: "#fff" }}>
+              &copy; 2021 ACM GIT
+            </Typography>
+          </footer>
         </div>
       </div>
     </>

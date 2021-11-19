@@ -3,7 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
   //Sidebar
   sideSocialBar: {
-    width: "7%",
+    width: 90,
+    height: "100vh",
     backgroundColor: "rgba(29, 38, 108, 1)",
   },
   container1: {
@@ -34,9 +35,14 @@ export const useStyles = makeStyles((theme) => ({
     width: "100%",
     display: "flex",
     justifyContent: "space-around",
+    alignItems: "center",
+    position: "fixed",
+    background: "white",
+    zIndex: 10,
+    height: 100,
   },
   logoContainer: {
-    height: 170,
+    height: "100%",
     display: "flex",
     justifyContent: "center",
   },

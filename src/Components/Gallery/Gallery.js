@@ -50,7 +50,13 @@ function Gallery() {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <Grid container style={{ width: "100%" }}>
+    <Grid
+      container
+      style={{
+        width: "100%",
+        marginTop: 100,
+      }}
+    >
       <Typography
         variant="h2"
         color="initial"

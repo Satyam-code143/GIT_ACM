@@ -121,17 +121,11 @@ function TeamDesktop() {
 
   useEffect(() => {
     Aos.init({ duration: 1000 });
-    // async function getData() {
-    //   const response = await api.get("api/home/notification");
-    //   const image = response.data[0].img.data;
-    //   const img = new Buffer.from(image).toString("base64");
-    // }
-    // getData();
   }, []);
   const [showFlag, setShowFlag] = useState({ flag: false, id: "" });
   return (
     <>
-      <Grid container style={{ width: "100%" }}>
+      <Grid container style={{ width: "100%", marginTop: 100 }}>
         <Typography
           variant="h2"
           color="initial"
